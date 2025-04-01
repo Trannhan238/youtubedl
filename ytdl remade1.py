@@ -141,12 +141,6 @@ class YouTubeDownloader:
         
         header = ttk.Label(main_frame, text=self._("title"), style='Header.TLabel')
         header.pack(pady=(0, 20))
-        ###########
-        # Modified Download Button
-        self.download_btn = ttk.Button(self.button_frame, text=self._("download_button"), 
-                                     command=self.toggle_download, style='Accent.TButton')
-        self.download_btn.grid(row=0, column=0, padx=5)
-        ###########
         
         # URL Entry with validation
         url_frame = ttk.Frame(main_frame)
